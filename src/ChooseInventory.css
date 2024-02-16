@@ -1,0 +1,40 @@
+
+.inventory-row {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+
+.row-list {
+    display: flex;
+    gap: 10px;
+}
+
+.row-item {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 7px;
+    font-size: x-large;
+    background-color: skyblue;
+    color: white;
+    border-radius: 4px;
+}
+
+.selected-phoneme {
+    background-color: rgb(7, 120, 195) !important;
+    border: 2px rgb(0, 74, 110);
+}
+
+.row-item:hover {
+    background-color: rgb(88, 172, 228);
+}
+
+.submit-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: skyblue;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: x-large;
+}
