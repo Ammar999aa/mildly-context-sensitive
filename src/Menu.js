@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Menu.css';
 
 const Menu = ({ inventory }) => {
     return (
@@ -8,7 +9,10 @@ const Menu = ({ inventory }) => {
                     Looks like your inventory is empty, proceed to add phonemes in <Link to='./inventory'>the inventory</Link>.
                 </h1>
             ) : (
-                <Link to='./inventory'>the inventory</Link>
+                <div className='menu-options'>
+                    <Link to='./inventory'>the inventory</Link>
+                    <Link to='./syllable'>set syllable constraints</Link>
+                </div>
             )}
         </div>
     );

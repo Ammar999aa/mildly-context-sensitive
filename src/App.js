@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './ChooseInventory';
+import Syllable from './Syllable';
 import Menu from './Menu';
 import ChooseInventory from './ChooseInventory';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -24,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Menu inventory={inventory} />} />
+          <Route path="/syllable" element={<Syllable />} />
           <Route path="/inventory" element={<ChooseInventory inventory={inventory} toggleInventoryItem={toggleInventoryItem} />} />
         </Routes>
       </BrowserRouter>
