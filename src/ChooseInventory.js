@@ -1,9 +1,11 @@
 
+import { useNavigate } from 'react-router-dom';
 import './ChooseInventory.css'
 
 const ChooseInventory = ({ inventory, toggleInventoryItem }) => {
+    const navigate = useNavigate();
     const handleSubmit = () => {
-
+        navigate('/');
     }
 
     // Expanded list of IPA symbols by category

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './ChooseInventory';
+import Menu from './Menu';
 import ChooseInventory from './ChooseInventory';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
       Welcome to Mildly Context Sensitive
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Menu inventory={inventory} />} />
           <Route path="/inventory" element={<ChooseInventory inventory={inventory} toggleInventoryItem={toggleInventoryItem} />} />
         </Routes>
       </BrowserRouter>
