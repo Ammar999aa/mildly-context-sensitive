@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [inventory, setInventory] = useState([]);
+  const [syllables, setSyllables] = useState([]);
 
   const toggleInventoryItem = (item) => {
     const isItemInInventory = inventory.includes(item);
@@ -25,7 +26,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Menu inventory={inventory} />} />
-          <Route path="/syllable" element={<Syllable />} />
+          <Route path="/syllable" element={<Syllable syllables={syllables} setSyllables={setSyllables} />} />
           <Route path="/inventory" element={<ChooseInventory inventory={inventory} toggleInventoryItem={toggleInventoryItem} />} />
         </Routes>
       </BrowserRouter>
