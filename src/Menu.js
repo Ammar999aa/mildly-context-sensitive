@@ -12,6 +12,7 @@ const Menu = ({ inventory }) => {
                 <div className='menu-options'>
                     <Link to='./inventory'>the inventory</Link>
                     <Link to='./syllable'>set syllable constraints</Link>
+                    <Link to='/generate'>Generate text</Link>
                 </div>
             )}
         </div>
